@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: "Inter", sans-serif;
     color: rgb(41, 38, 38);
@@ -36,6 +40,10 @@ body{
     display: inline-block;
     width: 200px;
     height: 200px;
+}
+
+.nav-links {
+    padding-right: 30px;
 }
 
 .nav-links ul{
@@ -340,25 +348,40 @@ footer{
     color: #f1f3f5;
     margin-top: 80px;
     /* margin-bottom: 50px; */
-    padding-top: 50px;
+    padding-top: 10px;
     padding-bottom: 10px;
 }
 
 .footer-content{
-    /* margin: 0 auto; */
+    margin: 10px 0;
     display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 80px;
 }
 
-.llogo {
+/* .llogo {
     align-self: center;
-}
+} */
 
 #contact {
     align-self: center;
+}
+
+.phone-number {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.email svg {
+    margin-bottom: 0px;
 }
 
 .icons{
@@ -366,10 +389,14 @@ footer{
     height: 25px;
 }
 
-.social-media{
+.social-media-icons {
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
+    justify-content: center;
+    gap: 16px;
+}
+
+.social-media-icons a {
+    fill: #f1f3f5;
 }
 
 /* .social-media a icons {
@@ -378,4 +405,9 @@ footer{
 
 .social-media a:hover{
     fill: #ff922b;
+}
+
+.copyright {
+    margin-top: 10px;
+    text-align: center;
 }
