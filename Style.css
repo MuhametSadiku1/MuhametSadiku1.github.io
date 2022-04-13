@@ -8,9 +8,8 @@ body{
     color: rgb(41, 38, 38);
 }
 
-.nav-bar{
+#nav-bar{
     display: flex;
-    padding: 20px;
     justify-content: space-between;
     align-items: center;
     background-color: #1971c2;
@@ -19,20 +18,24 @@ body{
     z-index: 10;
 }
 
-/* .llogo{
-    margin-top: 30px;
-    margin-left: 30px;
-} */
+.llogo{
+    width: 200px;
+    height: 120px;
+    overflow: hidden;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
 
 .llogo a{
     text-decoration: none;
     cursor: pointer;
 }
 
-.llogo p{
-    font-size: 32px;
-    font-weight: 400;
-    color: #f1f3f5;
+.llogo svg {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
 }
 
 .nav-links ul{
@@ -45,7 +48,7 @@ body{
     padding: 8px 12px;
 }
 
-.nav-links ul li::after {
+/* .nav-links ul li::after {
     content: "";
     width: 0%;
     height: 2px;
@@ -53,15 +56,23 @@ body{
     display: block;
     margin: auto;
     transition: 0.5s;
-}
+} */
 
-.nav-links ul li::after:hover {
+/* .nav-links ul li::after:hover {
     width: 100%;
-}
+} */
 
 .nav-links ul li a{
-    color: #f8f9fa;
+    color: #f1f3f5;
+    font-size: 18px;
+    font-weight: 500;
     text-decoration: none;
+}
+
+.nav-links ul li a:hover{
+    color: #f8a829;
+    border-bottom: 2px solid #f8a829;
+    transition: all 0.1s;
 }
 
 /* .nav-links ul li a:hover {
@@ -109,7 +120,7 @@ body{
 .hero-btn {
     display: inline-block;
     margin-top: 20px;
-    padding: 10px 15px;
+    padding: 13px 18px;
     text-decoration: none;
     color: #f8f9fa;
     font-size: 18px;
@@ -159,7 +170,7 @@ body{
 }
 
 #rreth-nesh button{
-    padding: 10px 15px;
+    padding: 13px 18px;
     text-decoration: none;
     font-size: 18px;
     background-color: #ff922b;
@@ -268,7 +279,7 @@ nav{
 .njoftimi1:hover,
 .njoftimi2:hover,
 .njoftimi3:hover{
-    box-shadow: 0px 5px 20px #888;
+    box-shadow: 0px 3px 20px #888;
     /* width: 100.1%;
     height: 100.1%;  */
 }
@@ -324,24 +335,17 @@ nav{
     flex-basis: 100%;
 } */
 
-.kontakti{
-    margin-top: 80px;
-    display: flex;
-    justify-items: center;
-}
-
 footer{
     background-color: #1971c2;
     color: #f1f3f5;
     margin-top: 80px;
     /* margin-bottom: 50px; */
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
 }
 
 .footer-content{
     /* margin: 0 auto; */
-
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
