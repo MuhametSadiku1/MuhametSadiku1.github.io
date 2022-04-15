@@ -1,16 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body{
-    font-family: "Inter", sans-serif;
-    color: rgb(41, 38, 38);
-}
 
 #nav-bar{
     display: flex;
@@ -80,7 +67,7 @@ body{
 .nav-links ul li a:hover{
     color: #f8a829;
     border-bottom: 2px solid #f8a829;
-    transition: all 0.1s;
+    transition: all 0.5s ease;
 }
 
 /* .nav-links ul li a:hover {
@@ -98,7 +85,7 @@ body{
     min-height: 100vh;
     width: 100%;
     color: #f8f9fa;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/High\ school.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/images/High\ school.jpg);
     
     background-position: center;
     background-size: cover;
@@ -142,6 +129,7 @@ body{
 .hero-btn:hover {
     background-color: white;
     color: #f8a829;
+    transition: all 0.5s ease;
 }
 
 /* .pjesa-kryesore a {
@@ -191,6 +179,7 @@ body{
 #rreth-nesh button:hover{
     background-color: white;
     color: #f8a829;
+    transition: all 0.5s ease;
 }
 
 .objekti h2, 
@@ -339,6 +328,99 @@ nav{
     text-align: left;
 }
 
+/* Contact Start */
+
+#contact {
+    width: 100%;
+    text-align: center;
+}
+
+.contact-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#contact h1 {
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    margin-bottom: 20px;
+}
+
+.contact-img {
+    width: 50%;
+}
+
+.contact-img img { 
+    width: 100%;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.te-dhenat {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.te-dhenat input {
+    width: 40%;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+}
+
+.email input {
+    width: 85%;
+}
+
+#contact input {
+    padding: 10px 15px;
+}
+
+.mesazhi {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.mesazhi textarea {
+    width: 90%;
+}
+
+.mesazhi button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 13px 18px;
+    text-decoration: none;
+    color: #f8f9fa;
+    font-size: 18px;
+    background-color: #ff922b;
+    
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+}
+
+.mesazhi button:hover {
+    background-color: white;
+    color: #f8a829;
+    transition: all 0.5s ease;
+}
+
+/* Contact End */
+
 /* .emri{
     flex-basis: 100%;
 } */
@@ -364,19 +446,21 @@ footer{
     align-self: center;
 } */
 
-#contact {
+/* #contact {
     align-self: center;
-}
+} */
 
 .phone-number {
     display: flex;
     align-items: center;
+    gap: 5px;
     margin: 15px 0;
 }
 
 .email {
     display: flex;
     align-items: center;
+    gap: 5px;
     margin: 15px 0;
 }
 
