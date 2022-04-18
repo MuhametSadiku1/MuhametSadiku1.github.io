@@ -1,8 +1,84 @@
-@meadia (min-height: 1440) {
+@media (min-width: 75em) {
 
-    .nav-bar {
-        display: flex;
-        justify-content: center;
+}
+
+@media (max-width: 75em) {
+    
+}
+
+/* max-width: 944px */
+@media (max-width: 59em) {
+
+    .permbajtja {
+        width: 85%;
     }
+
+    /* #rreth-nesh .rreth-nesh1,
+    #rreth-nesh .rreth-nesh2 {
+        display: flex;
+        gap: 2.4rem;
+    } */
+
+    /* #rreth-nesh img {
+        width: 50%;
+    } */
+
+    .objekti2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Njoftimet {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .testimonials {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+/* Portrait Tablet max-width: 736px */
+@media (max-width: 46em) {
+ 
+    /* .permbajtja {
+        width: 90%;
+    } */
+
+    .footer-content {
+        flex-direction: column;
+        gap: 1.6rem;
+    }
+
+    .contact-body {
+        flex-direction: column;
+    }
+
+}
+
+/* Mobile max-width: 608px */
+@media (max-width: 38em) {
+
+     #rreth-nesh {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Njoftimet {
+        grid-template-columns: 1fr;
+    }
+
+    .objekti2 {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+    }
+
+}
+
+/* Mobile max-width: 530px */
+@media (max-width: 33em) {
 
 }
